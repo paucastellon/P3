@@ -1,0 +1,107 @@
+\hypertarget{classupc_1_1DigitalFilter}{}\doxysection{upc\+::Digital\+Filter Class Reference}
+\label{classupc_1_1DigitalFilter}\index{upc::DigitalFilter@{upc::DigitalFilter}}
+
+
+Digital filter implemented using direct form.  
+
+
+
+
+{\ttfamily \#include $<$digital\+\_\+filter.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a3d8e61b92170380d06b26aee1ebc1f16}\label{classupc_1_1DigitalFilter_a3d8e61b92170380d06b26aee1ebc1f16}} 
+\mbox{\hyperlink{classupc_1_1DigitalFilter_a3d8e61b92170380d06b26aee1ebc1f16}{Digital\+Filter}} (const std\+::vector$<$ float $>$ \&\+\_\+a, const std\+::vector$<$ float $>$ \&\+\_\+b, float g=1.\+0F)
+\begin{DoxyCompactList}\small\item\em Create filter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_ac3c32e0d51a88354482f13528e9a7842}\label{classupc_1_1DigitalFilter_ac3c32e0d51a88354482f13528e9a7842}} 
+\mbox{\hyperlink{classupc_1_1DigitalFilter_ac3c32e0d51a88354482f13528e9a7842}{Digital\+Filter}} ()
+\begin{DoxyCompactList}\small\item\em create void filter H(z) = 1 \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_ade3c3a24bbfbc1b2edbf4bcd0885a9e6}\label{classupc_1_1DigitalFilter_ade3c3a24bbfbc1b2edbf4bcd0885a9e6}} 
+void \mbox{\hyperlink{classupc_1_1DigitalFilter_ade3c3a24bbfbc1b2edbf4bcd0885a9e6}{set\+\_\+a}} (std\+::vector$<$ float $>$ const \&A)
+\begin{DoxyCompactList}\small\item\em Change denominator (state conditions only cleaned if order changes) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a9f23a5e9db027eb0c9b70bd9b5d08e09}\label{classupc_1_1DigitalFilter_a9f23a5e9db027eb0c9b70bd9b5d08e09}} 
+void \mbox{\hyperlink{classupc_1_1DigitalFilter_a9f23a5e9db027eb0c9b70bd9b5d08e09}{set\+\_\+b}} (const std\+::vector$<$ float $>$ \&B)
+\begin{DoxyCompactList}\small\item\em Change denominator (state conditions only cleaned if order changes) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classupc_1_1DigitalFilter_a54937beb73f0789cb9265498522da628}{Digital\+Filter}} (const \mbox{\hyperlink{classupc_1_1DigitalFilter}{Digital\+Filter}} \&f)
+\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a26527559b1b71aad240deca22f5599ec}\label{classupc_1_1DigitalFilter_a26527559b1b71aad240deca22f5599ec}} 
+\mbox{\hyperlink{classupc_1_1DigitalFilter}{Digital\+Filter}} \& \mbox{\hyperlink{classupc_1_1DigitalFilter_a26527559b1b71aad240deca22f5599ec}{operator=}} (const \mbox{\hyperlink{classupc_1_1DigitalFilter}{Digital\+Filter}} \&f)
+\begin{DoxyCompactList}\small\item\em Asign operator (copy a filter from other) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a2b97aaeacac8b5a8b52e1bd8fc295970}\label{classupc_1_1DigitalFilter_a2b97aaeacac8b5a8b52e1bd8fc295970}} 
+void \mbox{\hyperlink{classupc_1_1DigitalFilter_a2b97aaeacac8b5a8b52e1bd8fc295970}{set\+\_\+resonator}} (float norm\+\_\+central\+\_\+freq, float norm\+\_\+bandwidth)
+\begin{DoxyCompactList}\small\item\em Second order AR band-\/pass filter defined by central frequency and bandwidth. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a506905346c44ac46c292ea1fa1212c3e}\label{classupc_1_1DigitalFilter_a506905346c44ac46c292ea1fa1212c3e}} 
+void {\bfseries set\+\_\+gain} (float g)
+\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_ad6c0f9584687642434081448f85d89f9}\label{classupc_1_1DigitalFilter_ad6c0f9584687642434081448f85d89f9}} 
+void \mbox{\hyperlink{classupc_1_1DigitalFilter_ad6c0f9584687642434081448f85d89f9}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clean state conditions \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a8d8f578b514a2dd58a545a68fdf441ee}\label{classupc_1_1DigitalFilter_a8d8f578b514a2dd58a545a68fdf441ee}} 
+float \mbox{\hyperlink{classupc_1_1DigitalFilter_a8d8f578b514a2dd58a545a68fdf441ee}{operator()}} (float x)
+\begin{DoxyCompactList}\small\item\em Filter one sample. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_aea8cdd6504cf9c4ae1a6d9a28e1bcaa4}\label{classupc_1_1DigitalFilter_aea8cdd6504cf9c4ae1a6d9a28e1bcaa4}} 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classupc_1_1DigitalFilter_aea8cdd6504cf9c4ae1a6d9a28e1bcaa4}{operator()}} (const std\+::vector$<$ float $>$ \&x)
+\begin{DoxyCompactList}\small\item\em Filter a vector of samples. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a08b53e2a3884053f4a48d6860194cccb}\label{classupc_1_1DigitalFilter_a08b53e2a3884053f4a48d6860194cccb}} 
+void \mbox{\hyperlink{classupc_1_1DigitalFilter_a08b53e2a3884053f4a48d6860194cccb}{operator()}} (std\+::vector$<$ float $>$\+::const\+\_\+iterator beg\+Src, std\+::vector$<$ float $>$\+::const\+\_\+iterator end\+Src, std\+::vector$<$ float $>$\+::iterator beg\+Dst)
+\begin{DoxyCompactList}\small\item\em Filter several samples, from beg\+Src to end\+Src, and save at beg\+Dst and following positions. \end{DoxyCompactList}\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classupc_1_1DigitalFilter_a03537f0f0604b772f8f6ee3cc08f194e}{freqz}} (std\+::vector$<$ float $>$ const freq, bool db=true) const
+\item 
+std\+::vector$<$ float $>$ \mbox{\hyperlink{classupc_1_1DigitalFilter_aaccd48246b8f0154725d40d43ae52268}{freqz}} (unsigned int N, bool db=true) const
+\item 
+float \mbox{\hyperlink{classupc_1_1DigitalFilter_aee8d8470871b79ff465459ad0bedd833}{sfreqz}} (float freq, bool db=true) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Digital filter implemented using direct form. 
+
+This class implements digital filtering. The filter is stored as rational funcion H(z) = g B(z)/A(z) Being g\+: gain B(z) = b0 +b1 z$^\wedge$-\/1 + b2 z$^\wedge$-\/2 ... bm z$^\wedge$-\/m A(z) = a0 +a1 z$^\wedge$-\/1 + a2 z$^\wedge$-\/2 ... an z$^\wedge$-\/n
+
+The state conditions are saved after each call to the filter. The filter is implemented using the direct form. Y(z) = B(z)/A(z) X(z) =$>$ U(z) = X(z)/A(z); Y(z) = B(z) U(z) State conditions\+: u\mbox{[}n\mbox{]}
+
+The state conditions are only cleared either\+:
+\begin{DoxyItemize}
+\item explicitely calling clean()
+\item by a change in filter coeficients that imply an order filter
+\end{DoxyItemize}
+
+The filters coefficients are set using \mbox{\hyperlink{classupc_1_1DigitalFilter_ade3c3a24bbfbc1b2edbf4bcd0885a9e6}{set\+\_\+a()}}, \mbox{\hyperlink{classupc_1_1DigitalFilter_a9f23a5e9db027eb0c9b70bd9b5d08e09}{set\+\_\+b()}}, set\+\_\+gain(). An alternative convinient method exist for 2nd order resonators, using the central frequency and the resonator bandwidth\+: \mbox{\hyperlink{classupc_1_1DigitalFilter_a2b97aaeacac8b5a8b52e1bd8fc295970}{set\+\_\+resonator()}} ~\newline
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a54937beb73f0789cb9265498522da628}\label{classupc_1_1DigitalFilter_a54937beb73f0789cb9265498522da628}} 
+\index{upc::DigitalFilter@{upc::DigitalFilter}!DigitalFilter@{DigitalFilter}}
+\index{DigitalFilter@{DigitalFilter}!upc::DigitalFilter@{upc::DigitalFilter}}
+\doxysubsubsection{\texorpdfstring{DigitalFilter()}{DigitalFilter()}}
+{\footnotesize\ttfamily upc\+::\+Digital\+Filter\+::\+Digital\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classupc_1_1DigitalFilter}{Digital\+Filter}} \&}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create filter 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classupc_1_1DigitalFilter_a03537f0f0604b772f8f6ee3cc08f194e}\label{classupc_1_1DigitalFilter_a03537f0f0604b772f8f6ee3cc08f194e}} 
+\index{upc::DigitalFilter@{upc::DigitalFilter}!freqz@{freqz}}
+\index{freqz@{freqz}!upc::DigitalFilter@{upc::DigitalFilter}}
+\doxysubsubsection{\texorpdfstring{freqz()}{freqz()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ upc\+::\+Digital\+Filter\+::freqz (\begin{DoxyParamCaption}\item[{std\+::vector$<$ float $>$ const}]{freq,  }\item[{bool}]{db = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+Get freq. response of filter in the given frequencies (freq). \mbox{\hyperlink{classupc_1_1DigitalFilter_aee8d8470871b79ff465459ad0bedd833}{sfreqz()}} is called for each given frequency \mbox{\Hypertarget{classupc_1_1DigitalFilter_aaccd48246b8f0154725d40d43ae52268}\label{classupc_1_1DigitalFilter_aaccd48246b8f0154725d40d43ae52268}} 
+\index{upc::DigitalFilter@{upc::DigitalFilter}!freqz@{freqz}}
+\index{freqz@{freqz}!upc::DigitalFilter@{upc::DigitalFilter}}
+\doxysubsubsection{\texorpdfstring{freqz()}{freqz()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ float $>$ upc\+::\+Digital\+Filter\+::freqz (\begin{DoxyParamCaption}\item[{unsigned int}]{N,  }\item[{bool}]{db = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+Get freq. response of filter in N discrite frequencies, from 0 to 0.\+5. \mbox{\hyperlink{classupc_1_1DigitalFilter_aee8d8470871b79ff465459ad0bedd833}{sfreqz()}} is called for each given frequency \mbox{\Hypertarget{classupc_1_1DigitalFilter_aee8d8470871b79ff465459ad0bedd833}\label{classupc_1_1DigitalFilter_aee8d8470871b79ff465459ad0bedd833}} 
+\index{upc::DigitalFilter@{upc::DigitalFilter}!sfreqz@{sfreqz}}
+\index{sfreqz@{sfreqz}!upc::DigitalFilter@{upc::DigitalFilter}}
+\doxysubsubsection{\texorpdfstring{sfreqz()}{sfreqz()}}
+{\footnotesize\ttfamily float upc\+::\+Digital\+Filter\+::sfreqz (\begin{DoxyParamCaption}\item[{float}]{freq,  }\item[{bool}]{db = {\ttfamily true} }\end{DoxyParamCaption}) const}
+
+Get freq. response of filter in the given frequency (freq). freq is the digital frequency, f/fsampling, with range in \mbox{[}0,0.\+5\mbox{]} If db is true, provide the result in dB\+: 20log($\vert$H(e$^\wedge$j2pif)$\vert$; Otherwise, the results is the squared module, $\vert$\+H$\vert$$^\wedge$2 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/digital\+\_\+filter.\+h\item 
+src/pav/digital\+\_\+filter.\+cpp\end{DoxyCompactItemize}

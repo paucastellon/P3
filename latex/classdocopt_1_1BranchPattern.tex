@@ -1,0 +1,66 @@
+\hypertarget{classdocopt_1_1BranchPattern}{}\doxysection{docopt\+::Branch\+Pattern Class Reference}
+\label{classdocopt_1_1BranchPattern}\index{docopt::BranchPattern@{docopt::BranchPattern}}
+
+
+Inheritance diagram for docopt\+::Branch\+Pattern\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdocopt_1_1BranchPattern__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for docopt\+::Branch\+Pattern\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classdocopt_1_1BranchPattern__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_a8a56cbf0c6b730c509cf3922acba2f31}\label{classdocopt_1_1BranchPattern_a8a56cbf0c6b730c509cf3922acba2f31}} 
+{\bfseries Branch\+Pattern} (Pattern\+List children=\{\})
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_ab0c5769d242d5b41c5766ba6d772a34e}\label{classdocopt_1_1BranchPattern_ab0c5769d242d5b41c5766ba6d772a34e}} 
+\mbox{\hyperlink{classdocopt_1_1Pattern}{Pattern}} \& {\bfseries fix} ()
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_abe21ea9bf1f491c64842921bc61d5cdd}\label{classdocopt_1_1BranchPattern_abe21ea9bf1f491c64842921bc61d5cdd}} 
+virtual std\+::string const  \& {\bfseries name} () const override
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_a73fb256384426f7cdad70fcaf13a5195}\label{classdocopt_1_1BranchPattern_a73fb256384426f7cdad70fcaf13a5195}} 
+virtual \mbox{\hyperlink{structdocopt_1_1value}{value}} const  \& {\bfseries get\+Value} () const
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_a7927fbc8ea5f3571f6b2e0e941f3b9b4}\label{classdocopt_1_1BranchPattern_a7927fbc8ea5f3571f6b2e0e941f3b9b4}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{classdocopt_1_1Pattern}{Pattern}} $\ast$ $>$ {\bfseries flat} (bool($\ast$filter)(\mbox{\hyperlink{classdocopt_1_1Pattern}{Pattern}} const $\ast$)) override
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_a8223c0727c53fb99d635707b05360865}\label{classdocopt_1_1BranchPattern_a8223c0727c53fb99d635707b05360865}} 
+virtual void {\bfseries collect\+\_\+leaves} (std\+::vector$<$ \mbox{\hyperlink{classdocopt_1_1LeafPattern}{Leaf\+Pattern}} $\ast$ $>$ \&lst) override final
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_a1b4609af47df9ebba57067e2cb5d762d}\label{classdocopt_1_1BranchPattern_a1b4609af47df9ebba57067e2cb5d762d}} 
+void {\bfseries set\+Children} (Pattern\+List children)
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_aa9bb7831bd3335c84de284086fa89d55}\label{classdocopt_1_1BranchPattern_aa9bb7831bd3335c84de284086fa89d55}} 
+Pattern\+List const  \& {\bfseries children} () const
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_a46f26e4a11c66913472100a2abdb6463}\label{classdocopt_1_1BranchPattern_a46f26e4a11c66913472100a2abdb6463}} 
+virtual void {\bfseries fix\+\_\+identities} (Unique\+Pattern\+Set \&patterns)
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_a0eb838adc74441c109e38c7a07da2519}\label{classdocopt_1_1BranchPattern_a0eb838adc74441c109e38c7a07da2519}} 
+virtual size\+\_\+t {\bfseries hash} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdocopt_1_1BranchPattern_ad34855b839d62d4bfcdfb9cf0b5903cc}\label{classdocopt_1_1BranchPattern_ad34855b839d62d4bfcdfb9cf0b5903cc}} 
+Pattern\+List {\bfseries f\+Children}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/pav/docopt\+\_\+cpp/docopt\+\_\+private.\+h\end{DoxyCompactItemize}

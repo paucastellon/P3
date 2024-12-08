@@ -1,0 +1,38 @@
+\hypertarget{pitch__evaluate_8cpp}{}\doxysection{src/get\+\_\+pitch/pitch\+\_\+evaluate.cpp File Reference}
+\label{pitch__evaluate_8cpp}\index{src/get\_pitch/pitch\_evaluate.cpp@{src/get\_pitch/pitch\_evaluate.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}docopt.\+h\char`\"{}}\newline
+Include dependency graph for pitch\+\_\+evaluate.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pitch__evaluate_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pitch__evaluate_8cpp_acc47b8492bcbc1ad3fab7d6ac74d2d8d}\label{pitch__evaluate_8cpp_acc47b8492bcbc1ad3fab7d6ac74d2d8d}} 
+int {\bfseries read\+\_\+vector} (const string \&filename, vector$<$ float $>$ \&x)
+\item 
+\mbox{\Hypertarget{pitch__evaluate_8cpp_a77944b5af41e256ec0ba1f00442cf9ba}\label{pitch__evaluate_8cpp_a77944b5af41e256ec0ba1f00442cf9ba}} 
+void {\bfseries compare} (const vector$<$ float $>$ \&vref, const vector$<$ float $>$ \&vtest, int \&num\+\_\+voiced, int \&num\+\_\+unvoiced, int \&num\+\_\+voiced\+\_\+unvoiced, int \&num\+\_\+unvoiced\+\_\+voiced, int \&num\+\_\+voiced\+\_\+voiced, int \&num\+\_\+gross\+\_\+errors, float \&fine\+\_\+error)
+\item 
+\mbox{\Hypertarget{pitch__evaluate_8cpp_a6768ae9e20f3fec64eb692300953e0e0}\label{pitch__evaluate_8cpp_a6768ae9e20f3fec64eb692300953e0e0}} 
+void {\bfseries print\+\_\+results} (int nframes, int num\+\_\+voiced, int num\+\_\+unvoiced, int num\+\_\+voiced\+\_\+unvoiced, int num\+\_\+unvoiced\+\_\+voiced, int num\+\_\+voiced\+\_\+voiced, int num\+\_\+gross\+\_\+errors, float fine\+\_\+errori, string filename)
+\item 
+\mbox{\Hypertarget{pitch__evaluate_8cpp_ac0f2228420376f4db7e1274f2b41667c}\label{pitch__evaluate_8cpp_ac0f2228420376f4db7e1274f2b41667c}} 
+int {\bfseries main} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pitch__evaluate_8cpp_ac3e1e3eb989b9766a74a68f946c1b20d}\label{pitch__evaluate_8cpp_ac3e1e3eb989b9766a74a68f946c1b20d}} 
+const float {\bfseries gross\+\_\+threshold} = 0.\+2F
+\end{DoxyCompactItemize}

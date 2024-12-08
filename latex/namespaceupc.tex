@@ -1,0 +1,93 @@
+\hypertarget{namespaceupc}{}\doxysection{upc Namespace Reference}
+\label{namespaceupc}\index{upc@{upc}}
+
+
+Name space of UPC.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classupc_1_1PitchAnalyzer}{Pitch\+Analyzer}}
+\item 
+class \mbox{\hyperlink{classupc_1_1CircularIndex}{Circular\+Index}}
+\begin{DoxyCompactList}\small\item\em Circular Index used to go through state circular buffer (u) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classupc_1_1DigitalFilter}{Digital\+Filter}}
+\begin{DoxyCompactList}\small\item\em Digital filter implemented using direct form. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classupc_1_1FileInfo}{File\+Info}}
+\item 
+class \mbox{\hyperlink{classupc_1_1Ext}{Ext}}
+\item 
+class \mbox{\hyperlink{classupc_1_1Path}{Path}}
+\item 
+class \mbox{\hyperlink{classupc_1_1Directory}{Directory}}
+\item 
+class \mbox{\hyperlink{classupc_1_1Filename}{Filename}}
+\item 
+class \mbox{\hyperlink{classupc_1_1KeyValue}{Key\+Value}}
+\item 
+class \mbox{\hyperlink{classupc_1_1array}{array}}
+\item 
+class \mbox{\hyperlink{classupc_1_1matrix}{matrix}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceupc_ab61343ef80507c505066d99a281645ee}\label{namespaceupc_ab61343ef80507c505066d99a281645ee}} 
+typedef vector$<$ string $>$ {\bfseries vstring}
+\item 
+\mbox{\Hypertarget{namespaceupc_a31ef55c6b4d2d73fd78e70710297c8f4}\label{namespaceupc_a31ef55c6b4d2d73fd78e70710297c8f4}} 
+typedef \mbox{\hyperlink{classupc_1_1array}{array}}$<$ int $>$ {\bfseries ivector}
+\item 
+\mbox{\Hypertarget{namespaceupc_a6bb820f56fc4cc2c976ac0ceeaa8e611}\label{namespaceupc_a6bb820f56fc4cc2c976ac0ceeaa8e611}} 
+typedef \mbox{\hyperlink{classupc_1_1matrix}{matrix}}$<$ int $>$ {\bfseries imatrix}
+\item 
+\mbox{\Hypertarget{namespaceupc_a12a5d4885a36892c03181736f8b3089c}\label{namespaceupc_a12a5d4885a36892c03181736f8b3089c}} 
+typedef \mbox{\hyperlink{classupc_1_1array}{array}}$<$ float $>$ {\bfseries fvector}
+\item 
+\mbox{\Hypertarget{namespaceupc_a9f26dfcf21c4c5cee20f5733be78ba11}\label{namespaceupc_a9f26dfcf21c4c5cee20f5733be78ba11}} 
+typedef \mbox{\hyperlink{classupc_1_1matrix}{matrix}}$<$ float $>$ {\bfseries fmatrix}
+\item 
+\mbox{\Hypertarget{namespaceupc_a226c72b20137fbf8cc10b0c0ca887b5d}\label{namespaceupc_a226c72b20137fbf8cc10b0c0ca887b5d}} 
+typedef \mbox{\hyperlink{classupc_1_1array}{array}}$<$ double $>$ {\bfseries dvector}
+\item 
+\mbox{\Hypertarget{namespaceupc_a53f2db863d6ef79ba43159171dce9612}\label{namespaceupc_a53f2db863d6ef79ba43159171dce9612}} 
+typedef \mbox{\hyperlink{classupc_1_1matrix}{matrix}}$<$ double $>$ {\bfseries dmatrix}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceupc_a97b8e57e112ba7b34bf233ad20b82751}\label{namespaceupc_a97b8e57e112ba7b34bf233ad20b82751}} 
+int {\bfseries get\+Cols} (istream \&is, vstring \&cols)
+\item 
+\mbox{\Hypertarget{namespaceupc_a3caf6fbcaba76b586577cab2d8b8bea0}\label{namespaceupc_a3caf6fbcaba76b586577cab2d8b8bea0}} 
+bool {\bfseries key\+Stroke} (char key=0)
+\item 
+\mbox{\Hypertarget{namespaceupc_ab2fd910b16bf8e101ab813f01ca242e9}\label{namespaceupc_ab2fd910b16bf8e101ab813f01ca242e9}} 
+{\footnotesize template$<$class \+\_\+\+Ty $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classupc_1_1array}{array}}$<$ \+\_\+\+Ty $>$ \&f)
+\item 
+\mbox{\Hypertarget{namespaceupc_ac501f17fd16a4120101674beee8802b5}\label{namespaceupc_ac501f17fd16a4120101674beee8802b5}} 
+{\footnotesize template$<$class \+\_\+\+Ty $>$ }\\std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&is, \mbox{\hyperlink{classupc_1_1array}{array}}$<$ \+\_\+\+Ty $>$ \&f)
+\item 
+\mbox{\Hypertarget{namespaceupc_ac42418ad9ea80d45b868329d67c315c5}\label{namespaceupc_ac42418ad9ea80d45b868329d67c315c5}} 
+{\footnotesize template$<$class \+\_\+\+Ty $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classupc_1_1matrix}{matrix}}$<$ \+\_\+\+Ty $>$ \&f)
+\item 
+\mbox{\Hypertarget{namespaceupc_a9d33040c9285f9e546a2cdccb017e246}\label{namespaceupc_a9d33040c9285f9e546a2cdccb017e246}} 
+{\footnotesize template$<$class \+\_\+\+Ty $>$ }\\std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&is, \mbox{\hyperlink{classupc_1_1matrix}{matrix}}$<$ \+\_\+\+Ty $>$ \&f)
+\item 
+\mbox{\Hypertarget{namespaceupc_a4c5e814ef76fc815a67f0de482283ff5}\label{namespaceupc_a4c5e814ef76fc815a67f0de482283ff5}} 
+\mbox{\hyperlink{classupc_1_1FileInfo}{File\+Info}} {\bfseries file\+Info} (const \mbox{\hyperlink{classupc_1_1Path}{Path}} \&fname)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{namespaceupc_ae8ed4ce6dc2c05dfc1aa6432db41e1ae}\label{namespaceupc_ae8ed4ce6dc2c05dfc1aa6432db41e1ae}} 
+const float \mbox{\hyperlink{namespaceupc_ae8ed4ce6dc2c05dfc1aa6432db41e1ae}{MIN\+\_\+\+F0}} = 20.\+0F
+\begin{DoxyCompactList}\small\item\em Minimum value of pitch in Hertzs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespaceupc_ab69be42753266b6e1a0deaa8eba56a19}\label{namespaceupc_ab69be42753266b6e1a0deaa8eba56a19}} 
+const float \mbox{\hyperlink{namespaceupc_ab69be42753266b6e1a0deaa8eba56a19}{MAX\+\_\+\+F0}} = 10000.\+0F
+\begin{DoxyCompactList}\small\item\em Maximum value of pitch in Hertzs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Name space of UPC. 

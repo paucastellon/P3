@@ -1,0 +1,72 @@
+\hypertarget{classdocopt_1_1Option}{}\doxysection{docopt\+::Option Class Reference}
+\label{classdocopt_1_1Option}\index{docopt::Option@{docopt::Option}}
+
+
+Inheritance diagram for docopt\+::Option\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classdocopt_1_1Option__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for docopt\+::Option\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{classdocopt_1_1Option__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a1da09cf8c24b9e40450f5d22ec26502d}\label{classdocopt_1_1Option_a1da09cf8c24b9e40450f5d22ec26502d}} 
+{\bfseries Option} (std\+::string short\+Option, std\+::string long\+Option, int argcount=0, \mbox{\hyperlink{structdocopt_1_1value}{value}} v=\mbox{\hyperlink{structdocopt_1_1value}{value}}\{false\})
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_af3996b856bd191cf0712ed34fa916f07}\label{classdocopt_1_1Option_af3996b856bd191cf0712ed34fa916f07}} 
+{\bfseries Option} (\mbox{\hyperlink{classdocopt_1_1Option}{Option}} const \&)=default
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_ac3860cc101da72b4309d6e58646c1441}\label{classdocopt_1_1Option_ac3860cc101da72b4309d6e58646c1441}} 
+{\bfseries Option} (\mbox{\hyperlink{classdocopt_1_1Option}{Option}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a48eaf5c2cf58bcdca3246692ec50248f}\label{classdocopt_1_1Option_a48eaf5c2cf58bcdca3246692ec50248f}} 
+\mbox{\hyperlink{classdocopt_1_1Option}{Option}} \& {\bfseries operator=} (\mbox{\hyperlink{classdocopt_1_1Option}{Option}} const \&)=default
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_acdfcb2a8b52d42ad94d756208141beb7}\label{classdocopt_1_1Option_acdfcb2a8b52d42ad94d756208141beb7}} 
+\mbox{\hyperlink{classdocopt_1_1Option}{Option}} \& {\bfseries operator=} (\mbox{\hyperlink{classdocopt_1_1Option}{Option}} \&\&)=default
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_ab7d5c918813d3c5414ff418bab3ed6e9}\label{classdocopt_1_1Option_ab7d5c918813d3c5414ff418bab3ed6e9}} 
+std\+::string const  \& {\bfseries long\+Option} () const
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a7c1a506e66873d965dbb97dfd165b295}\label{classdocopt_1_1Option_a7c1a506e66873d965dbb97dfd165b295}} 
+std\+::string const  \& {\bfseries short\+Option} () const
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a76ef24dea8376a828eeb53daadc3c1dd}\label{classdocopt_1_1Option_a76ef24dea8376a828eeb53daadc3c1dd}} 
+int {\bfseries arg\+Count} () const
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a98ea6657e77e1f78baaace69486bef6a}\label{classdocopt_1_1Option_a98ea6657e77e1f78baaace69486bef6a}} 
+virtual size\+\_\+t {\bfseries hash} () const override
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a44655164a427a6f6e0d98f1f30a88bac}\label{classdocopt_1_1Option_a44655164a427a6f6e0d98f1f30a88bac}} 
+void {\bfseries set\+Value} (\mbox{\hyperlink{structdocopt_1_1value}{value}} \&\&v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a49f14de794c19528b07cd6f39604a1a5}\label{classdocopt_1_1Option_a49f14de794c19528b07cd6f39604a1a5}} 
+static \mbox{\hyperlink{classdocopt_1_1Option}{Option}} {\bfseries parse} (std\+::string const \&option\+\_\+description)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Option_a8b395e69aa9718c6373330c8e29d3743}\label{classdocopt_1_1Option_a8b395e69aa9718c6373330c8e29d3743}} 
+virtual std\+::pair$<$ size\+\_\+t, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classdocopt_1_1LeafPattern}{Leaf\+Pattern}} $>$ $>$ {\bfseries single\+\_\+match} (Pattern\+List const \&left) const override
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/pav/docopt\+\_\+cpp/docopt\+\_\+private.\+h\end{DoxyCompactItemize}

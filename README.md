@@ -14,10 +14,17 @@ Ejercicios básicos
   `get_pitch`.
 
    * Complete el cálculo de la autocorrelación e inserte a continuación el código correspondiente.
+  
+   ![cálcul_autocorrelació](image-1.png)
 
    * Inserte una gŕafica donde, en un *subplot*, se vea con claridad la señal temporal de un segmento de
      unos 30 ms de un fonema sonoro y su periodo de pitch; y, en otro *subplot*, se vea con claridad la
 	 autocorrelación de la señal y la posición del primer máximo secundario.
+
+    En la gráfica siguiente observamos 30 ms de un fragmento sonoro y su estimación del pitch representado con varios puntos. También podemos ver una gráfica con la autocorrelación de este fragmento con el máximo secundario situada en la muestra 68.
+
+  ![fragment_sonor](image-6.png)
+  ![autocorrelació_sonor](image-5.png)
 
 	 NOTA: es más que probable que tenga que usar Python, Octave/MATLAB u otro programa semejante para
 	 hacerlo. Se valorará la utilización de la biblioteca matplotlib de Python.
@@ -25,7 +32,12 @@ Ejercicios básicos
    * Determine el mejor candidato para el periodo de pitch localizando el primer máximo secundario de la
      autocorrelación. Inserte a continuación el código correspondiente.
 
+    ![candidato_pitch](image-7.png)  
+
    * Implemente la regla de decisión sonoro o sordo e inserte el código correspondiente.
+
+    ![desició_sord_sonor](image-3.png)    
+
 
    * Puede serle útil seguir las instrucciones contenidas en el documento adjunto `código.pdf`.
 
@@ -48,13 +60,18 @@ Ejercicios básicos
       - Use el estimador de pitch implementado en el programa `wavesurfer` en una señal de prueba y compare
 	    su resultado con el obtenido por la mejor versión de su propio sistema.  Inserte una gráfica
 		ilustrativa del resultado de ambos estimadores.
-     
+
+    La primera gráfica de arriba corresponde a la estimación del pitch calculada por el programa wavesurfer. La segunda corresponde a nuestra estimación del pitch. Vemos que se parecen mucho las dos estimaciones.
+    También mostramos el nivel de potencia de la señal.
+      ![estimació_pitch](image.png)
 		Aunque puede usar el propio Wavesurfer para obtener la representación, se valorará
 	 	el uso de alternativas de mayor calidad (particularmente Python).
   
   * Optimice los parámetros de su sistema de estimación de pitch e inserte una tabla con las tasas de error
     y el *score* TOTAL proporcionados por `pitch_evaluate` en la evaluación de la base de datos 
 	`pitch_db/train`..
+
+  ![summary](image-4.png)
 
 Ejercicios de ampliación
 ------------------------

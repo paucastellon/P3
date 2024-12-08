@@ -1,0 +1,47 @@
+\hypertarget{classupc_1_1KeyValue}{}\doxysection{upc\+::Key\+Value Class Reference}
+\label{classupc_1_1KeyValue}\index{upc::KeyValue@{upc::KeyValue}}
+
+
+{\ttfamily \#include $<$keyvalue.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classupc_1_1KeyValue_a16e43218b2cdf234929ad76c6a28de51}\label{classupc_1_1KeyValue_a16e43218b2cdf234929ad76c6a28de51}} 
+{\bfseries Key\+Value} (const std\+::string \&raw\+\_\+parameters=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classupc_1_1KeyValue_aff88fb11aa97cd85fa0b398e34ed763a}\label{classupc_1_1KeyValue_aff88fb11aa97cd85fa0b398e34ed763a}} 
+void \mbox{\hyperlink{classupc_1_1KeyValue_aff88fb11aa97cd85fa0b398e34ed763a}{set}} (const std\+::string \&raw\+\_\+parameters)
+\begin{DoxyCompactList}\small\item\em Initialize table from string, e.\+g. \char`\"{}city=\+Barcelona; year=2015\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1KeyValue_a4bdd73a8b0d777a5e98bb0d9953ea33a}\label{classupc_1_1KeyValue_a4bdd73a8b0d777a5e98bb0d9953ea33a}} 
+const std\+::string \& \mbox{\hyperlink{classupc_1_1KeyValue_a4bdd73a8b0d777a5e98bb0d9953ea33a}{operator()}} (const std\+::string \&key) const
+\begin{DoxyCompactList}\small\item\em Give the value (as a string) of a given key. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1KeyValue_a00557b32ed6051ba013ee2438b89caf5}\label{classupc_1_1KeyValue_a00557b32ed6051ba013ee2438b89caf5}} 
+bool \mbox{\hyperlink{classupc_1_1KeyValue_a00557b32ed6051ba013ee2438b89caf5}{to\+\_\+float}} (const std\+::string \&key, float \&) const
+\begin{DoxyCompactList}\small\item\em Get the value as a float. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1KeyValue_a06358658d304c3066f6d64eb350383ce}\label{classupc_1_1KeyValue_a06358658d304c3066f6d64eb350383ce}} 
+bool \mbox{\hyperlink{classupc_1_1KeyValue_a06358658d304c3066f6d64eb350383ce}{to\+\_\+int}} (const std\+::string \&key, int \&) const
+\begin{DoxyCompactList}\small\item\em Get the value as an int. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classupc_1_1KeyValue_aa2f606d7ff6edd548ab3367d2e561a93}\label{classupc_1_1KeyValue_aa2f606d7ff6edd548ab3367d2e561a93}} 
+bool \mbox{\hyperlink{classupc_1_1KeyValue_aa2f606d7ff6edd548ab3367d2e561a93}{to\+\_\+vector}} (const std\+::string \&key, std\+::vector$<$ float $>$ \&) const
+\begin{DoxyCompactList}\small\item\em Get the value as a vector of floats. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to tranform parameters in a string format as a key/value table
+
+string s = \char`\"{}\+A=3; B=hola; lista=3,2,5;\char`\"{} \mbox{\hyperlink{classupc_1_1KeyValue}{Key\+Value}} kv(s); cout $<$$<$ kv(\char`\"{}\+A\char`\"{}) $<$$<$ \textquotesingle{}~\newline
+\textquotesingle{}; cout $<$$<$ kv(\char`\"{}\+B\char`\"{}) $<$$<$ \textquotesingle{}~\newline
+\textquotesingle{}; cout $<$$<$ kv(\char`\"{}lista\char`\"{}) $<$$<$ \textquotesingle{}~\newline
+\textquotesingle{};
+
+This will show \char`\"{}3\char`\"{} \char`\"{}hola\char`\"{} \char`\"{}3,2,5\char`\"{}
+
+Furthermore, it can transform the result to int, float, vector.
+
+E.\+g.\+: int i; kv.\+to\+\_\+int(\char`\"{}\+A\char`\"{},i); vector$<$float$>$ x; kv.\+to\+\_\+vector(\char`\"{}lista\char`\"{}, x); 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/keyvalue.\+h\item 
+src/pav/keyvalue.\+cpp\end{DoxyCompactItemize}

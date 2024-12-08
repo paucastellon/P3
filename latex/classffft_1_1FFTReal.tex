@@ -1,0 +1,39 @@
+\hypertarget{classffft_1_1FFTReal}{}\doxysection{ffft\+::FFTReal$<$ DT $>$ Class Template Reference}
+\label{classffft_1_1FFTReal}\index{ffft::FFTReal$<$ DT $>$@{ffft::FFTReal$<$ DT $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_a39f5a2ec14c15f9198268500716e5dba}\label{classffft_1_1FFTReal_a39f5a2ec14c15f9198268500716e5dba}} 
+enum \{ {\bfseries MAX\+\_\+\+BIT\+\_\+\+DEPTH} = 30
+ \}
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_a606148f1cf8c3b7d705473932fc063d1}\label{classffft_1_1FFTReal_a606148f1cf8c3b7d705473932fc063d1}} 
+typedef DT {\bfseries Data\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_a627db4d781235302c3a229fc4d7a10ba}\label{classffft_1_1FFTReal_a627db4d781235302c3a229fc4d7a10ba}} 
+{\bfseries FFTReal} (long length)
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_ac7e604c1ab7d7281d6b17ae1aa86ff36}\label{classffft_1_1FFTReal_ac7e604c1ab7d7281d6b17ae1aa86ff36}} 
+long {\bfseries get\+\_\+length} () const
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_a90c3e5270392ca61b612badb2a6c5e74}\label{classffft_1_1FFTReal_a90c3e5270392ca61b612badb2a6c5e74}} 
+void {\bfseries do\+\_\+fft} (Data\+Type f\mbox{[}$\,$\mbox{]}, const Data\+Type x\mbox{[}$\,$\mbox{]}) const
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_ac113ff1d55d11e4e53acba73965f14d4}\label{classffft_1_1FFTReal_ac113ff1d55d11e4e53acba73965f14d4}} 
+void {\bfseries do\+\_\+ifft} (const Data\+Type f\mbox{[}$\,$\mbox{]}, Data\+Type x\mbox{[}$\,$\mbox{]}) const
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_aa6f76da0844da57b1395e4efdc0f0bb7}\label{classffft_1_1FFTReal_aa6f76da0844da57b1395e4efdc0f0bb7}} 
+void {\bfseries rescale} (Data\+Type x\mbox{[}$\,$\mbox{]}) const
+\item 
+\mbox{\Hypertarget{classffft_1_1FFTReal_ae91999ceb42d32eef5bdd0d16db989d5}\label{classffft_1_1FFTReal_ae91999ceb42d32eef5bdd0d16db989d5}} 
+Data\+Type $\ast$ {\bfseries use\+\_\+buffer} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/include/ffft/FFTReal.\+h\item 
+src/include/ffft/FFTReal.\+hpp\end{DoxyCompactItemize}

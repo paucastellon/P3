@@ -1,0 +1,41 @@
+\hypertarget{classdocopt_1_1Pattern}{}\doxysection{docopt\+::Pattern Class Reference}
+\label{classdocopt_1_1Pattern}\index{docopt::Pattern@{docopt::Pattern}}
+
+
+Inheritance diagram for docopt\+::Pattern\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdocopt_1_1Pattern__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Pattern_a0a235229a02694f2127df05a890dec94}\label{classdocopt_1_1Pattern_a0a235229a02694f2127df05a890dec94}} 
+virtual std\+::vector$<$ \mbox{\hyperlink{classdocopt_1_1Pattern}{Pattern}} $\ast$ $>$ {\bfseries flat} (bool($\ast$filter)(\mbox{\hyperlink{classdocopt_1_1Pattern}{Pattern}} const $\ast$))=0
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Pattern_aaa5f995199f97d5154f1fed56500ea3a}\label{classdocopt_1_1Pattern_aaa5f995199f97d5154f1fed56500ea3a}} 
+virtual void {\bfseries collect\+\_\+leaves} (std\+::vector$<$ \mbox{\hyperlink{classdocopt_1_1LeafPattern}{Leaf\+Pattern}} $\ast$ $>$ \&)=0
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Pattern_ae85dc8111e7786da5f19077d803683cb}\label{classdocopt_1_1Pattern_ae85dc8111e7786da5f19077d803683cb}} 
+std\+::vector$<$ \mbox{\hyperlink{classdocopt_1_1LeafPattern}{Leaf\+Pattern}} $\ast$ $>$ {\bfseries leaves} ()
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Pattern_abc6c22c0858f5a02be93530dc5e5c340}\label{classdocopt_1_1Pattern_abc6c22c0858f5a02be93530dc5e5c340}} 
+virtual bool {\bfseries match} (Pattern\+List \&left, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classdocopt_1_1LeafPattern}{Leaf\+Pattern}} $>$$>$ \&collected) const =0
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Pattern_a2334b803066089f752f75dfb8b6e6791}\label{classdocopt_1_1Pattern_a2334b803066089f752f75dfb8b6e6791}} 
+virtual std\+::string const  \& {\bfseries name} () const =0
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Pattern_a952fcee01661ea94019fdcbe168005a7}\label{classdocopt_1_1Pattern_a952fcee01661ea94019fdcbe168005a7}} 
+virtual bool {\bfseries has\+Value} () const
+\item 
+\mbox{\Hypertarget{classdocopt_1_1Pattern_a4fdb3144b57b5a9350529c42878f1578}\label{classdocopt_1_1Pattern_a4fdb3144b57b5a9350529c42878f1578}} 
+virtual size\+\_\+t {\bfseries hash} () const =0
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/pav/docopt\+\_\+cpp/docopt\+\_\+private.\+h\end{DoxyCompactItemize}
